@@ -1,3 +1,24 @@
+function process() {
+  var name = $("#name").val();
+  var email = $("#email").val();
+  var subject = $("#subject").val();
+  var message = $("#message").val();
+
+  if (name == "") {
+    alert("Please enter a name.");
+  }
+  if (email == "") {
+    alert("Please enter an e-mail address.");
+  }
+  if (subject == "") {
+    alert("Please enter a subject for the message.");
+  }
+  if (message == "") {
+    alert("Please enter a message.");
+  }
+  alert("Successfully submitted! Thanks!");
+}
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 

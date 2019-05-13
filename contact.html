@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,shrink-to-fit=no"
+    />
+    <title>Contact</title>
+    <link rel="stylesheet" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div id="contact_info">
+      <h3>
+        Thank you for your interest in ISUD.
+      </h3>
+      <h4>
+        Feel free to send us a message:
+      </h4>
+    </div>
+    <fieldset>
+      <form id="form">
+        <input type="text" id="name" placeholder="Name" pattern="^[a-zA-Z]+$" />
+        <input
+          type="email"
+          class="inputnext"
+          id="email"
+          placeholder="E-mail"
+          pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        />
+        <input type="text" id="subject" placeholder="Subject" />
+        <input type="text" id="message" placeholder="Message" />
+        <input type="submit" value="Send" onclick="process()" />
+      </form>
+    </fieldset>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+      async
+    ></script>
+    <script src="js/scripts.js" async></script>
+  </body>
+</html>
