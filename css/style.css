@@ -1,6 +1,94 @@
 * {
-  background-color: F6FBFC;
+  font-family: "Slabo 13px", serif, Utopia, "Liberation Serif",
+  "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+font-size: 1.3vw;
+color: #000102;
 }
+
+p{
+  background-color: pink;
+}
+
+h1,h2,h3,h4{
+  background-color: lime;
+  font-weight: bold;
+}
+
+h1{
+  font-size: 1.2 em;
+}
+h2{
+  font-size: 1.15 em;
+}
+h3{
+  font-size: 1.1 em;
+}
+h4{
+  font-size: 1.05 em;
+}
+
+header, nav, iframe{
+  width: 80%;
+  left: 10%;
+  position: absolute;
+}
+
+header{
+  top: 5%; 
+}
+
+#header_line{
+  left: 25%;
+}
+
+nav{
+  top: 22%;
+  width: 10%;
+
+}
+
+nav li{
+  display: block;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #022936;
+}
+
+nav li a {
+  display: block;
+  color: #F6FBFC;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+nav li a:hover {
+  background-color: #6B919E;
+}
+
+iframe{
+  top: 22%;
+  height: 100%;
+  width: 70%;
+  left: 20%;
+  object-fit: contain;
+  background-color: red;
+  /* overflow: auto; */
+}
+
+/* nav{
+  position: absolute;
+}
+
+iframe{
+
+} */
+
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
@@ -45,5 +133,7 @@
 @media only screen and (min-width: 320px) {
   body {
     background-color: lightblue;
-  } */
+  } 
 }
+*/
+
