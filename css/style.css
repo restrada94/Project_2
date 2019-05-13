@@ -14,6 +14,7 @@ p, ul, ol {
   padding-bottom: 0.5em;
   padding-left: 0.5em;
   letter-spacing: .025em;
+  width: 95%;
 }
 
 h3,
@@ -40,9 +41,13 @@ h4 {
 header,
 nav,
 iframe {
-  width: 80%;
-  left: 10%;
-  position: absolute;
+  width: 100%;
+}
+
+header{
+  margin-left: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
 }
 
 iframe {
@@ -79,11 +84,13 @@ div img{
 
 nav {
   top: 17%;
-  width: 10%;
+  display: inline;
+  
 }
 
 nav li {
-  display: block;
+  display: inline-block;
+  border-right: 1px solid #f6fbfc;
 }
 
 nav ul {
@@ -109,8 +116,8 @@ nav li a:hover {
 
 iframe {
   top: 17%;
-  height: 100%;
-  width: 70%;
+  height: 50em;
+  width: 100%;
   left: 20%;
   object-fit: contain;
 }
@@ -165,15 +172,168 @@ iframe {
   border-radius: 1em;
 }
 
-/* @media only screen and (min-width: 720px) {
-  body {
-    background-color: lightblue;
+@media only screen and (min-width: 900px) {
+
+  * {
+    font-size: 1.3vw;
+    color: #000102;
+  }
+  
+  p, ul, ol {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    letter-spacing: .025em;
+  }
+  
+  h3,
+  h4 {
+    font-weight: bold;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    padding-left: 0.5em;
+  }
+  
+  h1 {
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 1.15em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+  h4 {
+    font-size: 1.05em;
+  }
+  
+  header,
+  nav,
+  iframe {
+    width: 80%;
+    left: 10%;
+    position: absolute;
+  }
+  
+  iframe {
+    background-color: #f6fbfc;
+  }
+  
+  h2.header_line {
+    top: 3%;
+    margin-left: 16%;
+    margin-top: -3%;
+    padding-left: 0em;
+  }
+  
+  form input {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    border: .05em solid #6b919e;
+    
+  }
+  
+  form input[type="submit"]{
+    background-color:#022936;
+    color: #f6fbfc;
+  }
+  
+  form.message{
+    padding-bottom: 5em;
+  }
+  
+  div img{
+    width: 100%;
+  }
+  
+  nav {
+    top: 17%;
+    width: 10%;
+  }
+  
+  nav li {
+    display: block;
+    border-bottom: 1px solid #f6fbfc;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: #6b919e;
+    background-color: #022936;
+  }
+  
+  nav li a {
+    display: block;
+    color: #f6fbfc;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  nav li a:hover {
+    background-color: #6b919e;
+  }
+  
+  iframe {
+    top: 17%;
+    height: 100%;
+    width: 70%;
+    left: 20%;
+    object-fit: contain;
+  }
+  
+  .collapsible {
+    background-color: #6b919e;
+    color: #f6fbfc;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    /* font-size: 15px; */
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active,
+  .collapsible:hover {
+    background-color: #022936;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f6fbfc;
+  }
+  
+  .open_content {
+    padding: 0 18px;
+    display: contents;
+    overflow: visible;
+    background-color: #f6fbfc;
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: .75em;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px grey; 
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #6b919e; 
+    border-radius: 1em;
   }
 }
 
-@media only screen and (min-width: 320px) {
-  body {
-    background-color: lightblue;
-  } 
-}
-*/

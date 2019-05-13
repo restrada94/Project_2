@@ -6,17 +6,14 @@ function process() {
 
   if (name == "") {
     alert("Please enter a name.");
-  }
-  else if (email == "") {
+  } else if (email == "") {
     alert("Please enter an e-mail address.");
-  }
-  else if (subject == "") {
+  } else if (subject == "") {
     alert("Please enter a subject for the message.");
-  }
-  else if (message == "") {
+  } else if (message == "") {
     alert("Please enter a message.");
   } else {
-  alert("Successfully submitted! Thanks!");
+    alert("Successfully submitted! Thanks!");
   }
 }
 
