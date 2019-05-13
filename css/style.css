@@ -1,53 +1,88 @@
 * {
-  font-family: "Slabo 13px", serif, Utopia, "Liberation Serif",
+  font-size: 1.3vw;
+  color: #000102;
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif
+  , Utopia, "Liberation Serif",
   "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
-font-size: 1.3vw;
-color: #000102;
 }
 
-p{
-  background-color: pink;
+p, ul, ol {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  letter-spacing: .025em;
 }
 
-h1,h2,h3,h4{
-  background-color: lime;
+h3,
+h4 {
   font-weight: bold;
+  padding-top: 0.5em;
+  padding-bottom: 2em;
+  padding-left: 0.5em;
 }
 
-h1{
-  font-size: 1.2 em;
+h1 {
+  font-size: 1.2em;
 }
-h2{
-  font-size: 1.15 em;
+h2 {
+  font-size: 1.15em;
 }
-h3{
-  font-size: 1.1 em;
+h3 {
+  font-size: 1.1em;
 }
-h4{
-  font-size: 1.05 em;
+h4 {
+  font-size: 1.05em;
 }
 
-header, nav, iframe{
+header,
+nav,
+iframe {
   width: 80%;
   left: 10%;
   position: absolute;
 }
 
-header{
-  top: 5%; 
+iframe {
+  background-color: #f6fbfc;
 }
 
-#header_line{
-  left: 25%;
+h2.header_line {
+  top: 3%;
+  margin-left: 16%;
+  margin-top: -3%;
+  padding-left: 0em;
 }
 
-nav{
-  top: 22%;
+form input {
+  display: block;
+  margin-bottom: 1em;
+  width: 100%;
+  border: .05em solid #6b919e;
+  
+}
+
+form input[type="submit"]{
+  background-color:#022936;
+  color: #f6fbfc;
+}
+
+form.message{
+  padding-bottom: 5em;
+}
+
+div img{
+  width: 100%;
+}
+
+nav {
+  top: 17%;
   width: 10%;
-
 }
 
-nav li{
+nav li {
   display: block;
 }
 
@@ -56,57 +91,46 @@ nav ul {
   margin: 0;
   padding: 0;
   width: 100%;
+  border: #6b919e;
   background-color: #022936;
 }
 
 nav li a {
   display: block;
-  color: #F6FBFC;
+  color: #f6fbfc;
   padding: 8px 16px;
   text-decoration: none;
 }
 
 /* Change the link color on hover */
 nav li a:hover {
-  background-color: #6B919E;
+  background-color: #6b919e;
 }
 
-iframe{
-  top: 22%;
+iframe {
+  top: 17%;
   height: 100%;
   width: 70%;
   left: 20%;
   object-fit: contain;
-  background-color: red;
-  /* overflow: auto; */
 }
 
-/* nav{
-  position: absolute;
-}
-
-iframe{
-
-} */
-
-
-/* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: #eee;
-  color: #444;
+  background-color: #6b919e;
+  color: #f6fbfc;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  /* font-size: 15px; */
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .collapsible:hover {
-  background-color: #ccc;
+  background-color: #022936;
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -114,14 +138,31 @@ iframe{
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #f6fbfc;
 }
 
 .open_content {
   padding: 0 18px;
   display: contents;
   overflow: visible;
-  background-color: #f1f1f1;
+  background-color: #f6fbfc;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: .75em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6b919e; 
+  border-radius: 1em;
 }
 
 /* @media only screen and (min-width: 720px) {
@@ -136,4 +177,3 @@ iframe{
   } 
 }
 */
-

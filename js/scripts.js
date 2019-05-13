@@ -7,16 +7,17 @@ function process() {
   if (name == "") {
     alert("Please enter a name.");
   }
-  if (email == "") {
+  else if (email == "") {
     alert("Please enter an e-mail address.");
   }
-  if (subject == "") {
+  else if (subject == "") {
     alert("Please enter a subject for the message.");
   }
-  if (message == "") {
+  else if (message == "") {
     alert("Please enter a message.");
-  }
+  } else {
   alert("Successfully submitted! Thanks!");
+  }
 }
 
 var coll = document.getElementsByClassName("collapsible");
